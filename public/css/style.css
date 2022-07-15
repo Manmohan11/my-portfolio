@@ -16,7 +16,7 @@ html {
 }
 
 body {
-	background-image: url(/img//bg.jpg);
+	background-image: url(/public/img/bg.jpg);
 	color: var(--text-color);
 	background-color: var(--bg-color);
 	font-family: "Montserrat", sans-serif;
