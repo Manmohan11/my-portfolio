@@ -36,15 +36,3 @@ deploy:
          args: deploy --only hosting
        env:
          FIREBASE_TOKEN:${{ secrets.FIREBASE_SERVICE_ACCOUNT_ITS_MMD}}
-     
-          
-         
-        
-      - uses: actions/checkout@v2
-      - run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ITS_MMD }}'
-          channelId: live
-          projectId: its-mmd
